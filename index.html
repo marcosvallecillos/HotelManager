@@ -1,3 +1,189 @@
-<div id="container">
+<!DOCTYPE html>
+<html lang="es">
 
-</div>
+<head>
+    <!-- Configuración básica del documento -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HotelManager</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <style>
+        table {
+            border: 1px solid black;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <aside>
+        <nav>
+            <h2>Hotel Manager</h2>
+            <hr>
+            <ul>
+                <li class="active">
+                    <a href="index.html ">Panel principal</a>
+                </li>
+
+                <li>
+                    <a href="#reservas">Reservas</a>
+                </li>
+
+                <li>
+                    <a href="#clientes">Clientes</a>
+                </li>
+
+                <li>
+                    <a href="#habitaciones">Habitaciones</a>
+                </li>
+
+                <li>
+                    <a href="#limpieza">Limpieza</a>
+                </li>
+<hr>
+                <li>
+                    <button class="logout">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                        Cerrar sesión
+                    </button>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main>
+
+        <section id="dashboard">
+            <div class="navbar">
+                <div class="fecha">
+                    <i class="fa-solid fa-calendar"></i>
+                    <span>Miércoles, 7 Oct 2026</span>
+                </div>
+                <div class="search-room">
+                    <input type="text" placeholder="Buscar habitación, cliente...">
+                    <button>
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+                <button class="nueva-reserva">
+                    <i class="fa-solid fa-plus"></i>
+                    Nueva reserva
+                </button>
+                <div class="perfil">
+                    <p>
+                        <i class="fa-solid fa-user"></i>
+                        {{user.nombre}} {{user.apellido}}
+                        <i class="fa-solid fa-caret-down"></i>
+                    </p>
+
+                    <p>Recepcionista</p>
+                </div>
+
+            </div>
+            <h2>Panel principal</h2>
+
+            <p>
+                Buenos días, {{user.nombre_recepcionista}}
+            </p>
+            <section class="resumen">
+
+                <article class="ocupacion">
+                    <h3>Ocupación actual</h3>
+                    <h4>82% (45/50)</h4>
+                    <p>+4% vs ayer</p>
+                </article>
+
+                <article class="llegadas">
+                    <h3>Llegadas de hoy</h3>
+                    <h4>24</h4>
+                    <p>8 completadas</p>
+                </article>
+
+                <article class="salidas">
+                    <h3>Salidas de hoy</h3>
+                    <h4>18</h4>
+                    <p>6 completadas</p>
+                </article>
+
+            </section>
+
+            <section class="movimientos">
+
+                <article class="tabla-llegadas">
+                    <h3>Llegadas del día de hoy</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Cliente</th>
+                                <th>Hora prevista</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>Alfreds Futterkiste</td>
+                                <td>12:30</td>
+                                <td>
+                                    <button>Check in</button>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Centro comercial Moctezuma</td>
+                                <td>18:30</td>
+                                <td>
+                                    <button>Check in</button>
+                                </td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+
+                </article>
+
+                <article class="tabla-salidas">
+
+                    <h3>Salidas del día de hoy</h3>
+
+                    <table>
+
+                        <thead>
+                            <tr>
+                                <th>Cliente</th>
+                                <th>Hora prevista</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>Alfreds Futterkiste</td>
+                                <td>12:30</td>
+                                <td>
+                                    <button>Check out</button>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Centro comercial Moctezuma</td>
+                                <td>18:30</td>
+                                <td>
+                                    <button>Check out</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </article>
+            </section>
+        </section>
+    </main>
+    
+    <footer>
+        <p>Hotel Manager - Versión 1.0</p>
+    </footer>
+</body>
+</html>
