@@ -117,7 +117,6 @@ main {
     cursor: pointer;
 }
 
-/* Botón nueva reserva */
 .nueva-reserva {
     display: flex;
     align-items: center;
@@ -130,9 +129,7 @@ main {
     cursor: pointer;
 }
 
-/* Perfil */
 .perfil {
-    display: flex;
     flex-direction: column;
     align-items: flex-end;
     min-width: 150px;
@@ -149,4 +146,8 @@ main {
 .perfil p:last-child {
     font-size: 14px;
     color: #666;
+}
+.rol{
+    margin-top:15px;
+    text-align: center;
 }
