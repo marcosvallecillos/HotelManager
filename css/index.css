@@ -1,0 +1,152 @@
+body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+aside {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 240px;
+    height: 100vh;
+    background-color: #1A3A4B;
+    color: white;
+    padding: 25px 15px;
+    box-sizing: border-box;
+}
+
+aside h2 {
+    margin: 0 0 30px 10px;
+    font-size: 20px;
+}
+
+aside ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+aside li {
+    margin-bottom: 8px;
+}
+
+aside a {
+    display: flex;
+    align-items: center;
+    padding: 12px 15px;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.2s;
+}
+
+aside a:hover {
+    background-color: #2C7A7B;
+}
+
+aside .logout {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 8px;
+    background: none;
+    color: white;
+    font-size: 16px;
+    text-align: left;
+    cursor: pointer;
+}
+
+aside .logout:hover {
+    background-color: #2C7A7B;
+}
+
+aside li.active{
+    border-radius: 8px;
+    background-color: #2C7A7B;;
+}
+main {
+    margin-left: 260px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 15px 25px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #ddd;
+}
+
+.fecha {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    white-space: nowrap;
+}
+
+.fecha i {
+    font-size: 18px;
+}
+
+.search-room {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    max-width: 450px;
+}
+
+.search-room input {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px 0 0 8px;
+    outline: none;
+}
+
+.search-room button {
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-left: none;
+    border-radius: 0 8px 8px 0;
+    background-color: #2C7A7B;
+    color: white;
+    cursor: pointer;
+}
+
+/* Botón nueva reserva */
+.nueva-reserva {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: #319795;
+    color: white;
+    cursor: pointer;
+}
+
+/* Perfil */
+.perfil {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    min-width: 150px;
+}
+
+.perfil p {
+    margin: 0;
+}
+
+.perfil p:first-child {
+    font-weight: bold;
+}
+
+.perfil p:last-child {
+    font-size: 14px;
+    color: #666;
+}
