@@ -90,6 +90,7 @@ aside {
     width: 32px;
     height: 32px;
     border-radius: 6px;
+    border: none;
     background: rgba(255, 255, 255, .1);
     color: white;
     cursor: pointer;

@@ -290,8 +290,6 @@ main {
     background: var(--color-primario);
 }
 
-/* Botón nueva reserva */
-
 .nueva-reserva {
     display: inline-flex;
     align-items: center;
@@ -319,8 +317,6 @@ main {
 .nueva-reserva:active {
     transform: scale(0.97);
 }
-
-/* Perfil de usuario */
 
 .perfil {
     display: flex;
@@ -371,10 +367,6 @@ main {
     color: var(--text-muted);
     font-size: 0.74rem;
 }
-
-/* =========================================
-   SECCIÓN DE RESERVAS
-========================================= */
 
 #reservas {
     flex: 1;
