@@ -628,6 +628,7 @@ tbody tr:hover {
 }
 
 .cliente-info {
+    display: flex;
     gap: 10px;
 }
 

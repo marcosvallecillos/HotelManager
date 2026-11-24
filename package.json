@@ -1,0 +1,28 @@
+{
+  "name": "hotelmanager",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "directories": {
+    "doc": "docs"
+  },
+ "scripts": {
+  "start": "electron ."
+},
+
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcosvallecillos/HotelManager.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/marcosvallecillos/HotelManager/issues"
+  },
+  "homepage": "https://github.com/marcosvallecillos/HotelManager#readme",
+  "devDependencies": {
+    "electron": "^45.4.1"
+  }
+}

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HotelManager - Panel de Gestión</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/clientes.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <aside id="sidebar" class="sidebar" aria-label="Navegación principal">
+        <div class="sidebar-header">
+            <div class="brand">
+                <div class="brand-icon">
+                    <i class="fa-solid fa-hotel"></i>
+                </div>
+                <h2>Hotel Manager</h2>
+            </div>
+            <button id="close-menu-btn" class="close-menu-btn" aria-label="Cerrar menú lateral">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+
+        <nav class="sidebar-nav">
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <i class="fa-solid fa-chart-pie"></i>
+                        <span>Panel principal</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="reservas.html">
+                        <i class="fa-solid fa-calendar-check"></i>
+                        <span>Reservas</span>
+                    </a>
+                </li>
+
+                <li class="active">
+                    <a href="clientes.html">
+                        <i class="fa-solid fa-users"></i>
+                        <span>Clientes</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="habitaciones.html">
+                        <i class="fa-solid fa-bed"></i>
+                        <span>Habitaciones</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="limpieza.html">
+                        <i class="fa-solid fa-broom"></i>
+                        <span>Limpieza</span>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="sidebar-footer">
+                <button class="logout" type="button" aria-label="Cerrar sesión">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    <span>Cerrar sesión</span>
+                </button>
+            </div>
+        </nav>
+    </aside>
+
+    <main>
+        <div class="navbar">
+            <div class="navbar-left">
+                <button id="menu-toggle-btn" class="menu-toggle-btn" aria-label="Abrir menú de navegación"
+                    aria-expanded="false" aria-controls="sidebar">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+                <div class="fecha">
+                    <i class="fa-regular fa-calendar-check"></i>
+                    <p class="fecha_hoy">Miércoles, 7 Oct 2026</p>
+                </div>
+            </div>
+
+            <div class="search-room">
+                <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                <input type="text" placeholder="Buscar habitación, cliente...">
+                <button type="button" aria-label="Ejecutar búsqueda">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </div>
+
+            <div class="navbar-right">
+                <button class="nueva-reserva" type="button">
+                    <i class="fa-solid fa-plus"></i>
+                    <span>Nueva reserva</span>
+                </button>
+
+                <div class="perfil">
+                    <div class="perfil-avatar">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <div class="perfil-info">
+                        <p class="perfil-nombre">
+                            {{user.nombre}} {{user.apellido}}
+                            <i class="fa-solid fa-caret-down"></i>
+                        </p>
+                        <p class="rol">Recepcionista</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="clientes">
+            <h1>Clientes</h1>
+            <div class="clientes-container">
+                <div class="clientes-header">
+                    <h2>Lista de clientes</h2>
+                    <button class="agregar-cliente-btn" type="button">
+                        <i class="fa-solid fa-plus"></i>
+                        <span>Agregar cliente</span>
+                    </button>
+                </div>
+                <div class="clientes-tabla">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Nombre</th>
+                                <th>Apellidos</th>
+                                <th>Email</th>
+                                <th>Teléfono</th>
+                                <th>DNI</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tablaClientes" ></tbody>
+                    </table>
+                </div>
+
+            </div>
+        </section>
+        <script src="js/app.js" defer></script>
+</body> 
+
+</html>

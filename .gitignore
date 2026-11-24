@@ -1,0 +1,83 @@
+
+# ==============================
+# NODE.JS
+# ==============================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# ==============================
+# ELECTRON
+# ==============================
+dist/
+dist-electron/
+out/
+release/
+build/
+*.asar
+*.app
+*.dmg
+*.exe
+*.msi
+*.deb
+*.rpm
+*.AppImage
+
+# ==============================
+# CACHE
+# ==============================
+.cache/
+.parcel-cache/
+.vite/
+.eslintcache
+*.tsbuildinfo
+
+# ==============================
+# LOGS
+# ==============================
+logs/
+*.log
+
+# ==============================
+# ENVIRONMENT VARIABLES
+# ==============================
+.env
+.env.*
+!.env.example
+
+# ==============================
+# IDE / EDITORS
+# ==============================
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea/
+*.swp
+*.swo
+
+# ==============================
+# OPERATING SYSTEM
+# ==============================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ==============================
+# TESTS / COVERAGE
+# ==============================
+coverage/
+.nyc_output/
+
+# ==============================
+# TEMPORARY FILES
+# ==============================
+tmp/
+temp/
+*.tmp
+*.bak
+
+# ==============================
+# ELECTRON BUILDER
+# ==============================
+electron-builder-debug.yml
