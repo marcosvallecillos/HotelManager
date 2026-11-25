@@ -1,0 +1,45 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/modal_incidencias.css">
+</head>
+<body>
+    
+<div class="modal-incidencias" id="modalincidencias">
+    <div class="modal-incidencias-contenido">
+
+        <div class="modal-incidencias-header">
+           <h3><i class="fa-solid fa-triangle-exclamation"></i> Incidencias Activas</h3>
+                            <button type="button" class="nueva-reserva">
+                                <i class="fa-solid fa-plus"></i> Nueva incidencia
+                            </button>
+
+            <button type="button" id="cerrarModal" class="cerrar-modal">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+
+        <div class="modal-incidencias-body">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Habitacion</th>
+                        <th>Gestión</th>
+                        <th>Estado</th>
+                    </tr>
+                </thead>
+
+                <tbody id="tablaTodasincidencias"></tbody>
+            </table>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>

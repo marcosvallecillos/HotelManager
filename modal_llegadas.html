@@ -1,0 +1,45 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/modal.css">
+</head>
+<body>
+    
+<div class="modal-llegadas" id="modalLlegadas">
+    <div class="modal-llegadas-contenido">
+
+        <div class="modal-llegadas-header">
+            <h2>
+                <i class="fa-solid fa-bell-concierge"></i>
+                Todas las llegadas de hoy
+            </h2>
+
+            <button type="button" id="cerrarModal" class="cerrar-modal">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+
+        <div class="modal-llegadas-body">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Cliente</th>
+                        <th>Hora prevista</th>
+                        <th>Acción</th>
+                    </tr>
+                </thead>
+
+                <tbody id="tablaTodasLlegadas"></tbody>
+            </table>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
